@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import logo from '../assets/formicon.png'
+import { Navigate } from 'react-router-dom';
+import Result from './Result'
+import Result1 from './Result1'
 
 export default class Submit extends Component {
     continue=e=>{
@@ -22,7 +25,9 @@ export default class Submit extends Component {
       result:false,
       redirectss: false
     }
+    
   render() {
+    const navigate = Navigate();
     const {values} = this.props;
     const{ result }=this.state;
     const { redirectss } = this.state;

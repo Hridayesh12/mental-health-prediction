@@ -89,11 +89,11 @@ export default class Surveyform4 extends Component {
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input onChange={handleChange("coworker")} name="coworkers" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input onChange={handleChange("coworkers")} name="coworker" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label  className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input  onChange={handleChange("coworker")} name="coworkers" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input  onChange={handleChange("coworkers")} name="coworker" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label className="sm:1xl text-3xl " name="some">Some them</label>
                     </div>
                 </div>
