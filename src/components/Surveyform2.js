@@ -83,7 +83,7 @@ export default class Surveyform2 extends Component {
                     <label className=" flex-row sm:1xl text-3xl" name="yes">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input name="company" value={0} onChange={handleChange("tech_cpmpany")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input name="company" value={0} onChange={handleChange("tech_company")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl " name="no">No</label>
                 </div>
             </div>
