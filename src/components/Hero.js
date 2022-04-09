@@ -8,14 +8,14 @@ const Hero = () => {
 			<div className="flex p-4 xs:flex-col lg:flex-row lg:mx-8">
 				<div className="h-1/2 flex flex-col xs:items-center lg:items-start self-center gap-5">
 					<h1 className="font-bold xs:text-2xl sm:text-3xl xs:text-center">
-						Take the Mental Health Survey
+						Take the Mental Health Prediction Test
 					</h1>
 					<p className="xs:text-center lg:text-left lg:text-lg">
 						Make Mental Health a priority by identifying the risk of falling in
 						depression before its onset.
 					</p>
 					<div className="flex gap-x-5">
-						<Link to="/">
+						{/* <Link to="/">
 							<button className="transition-all xs:scale-90 md:scale-100 transform hover:scale-110 lg:px-5 lg:py-4 flex items-center bg-primary text-white p-2 rounded-xl">
 								General Survey
 								<svg
@@ -31,10 +31,10 @@ const Hero = () => {
 									/>
 								</svg>
 							</button>
-						</Link>
-						<Link to="/">
+						</Link> */}
+						<Link to="/form">
 							<button className="transition-all xs:scale-90 sm:scale-100 transform hover:scale-110 lg:px-5 lg:py-4 items-center flex bg-primary text-white p-2 rounded-xl">
-								Tech Survey
+								Take the Test
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									class="h-5 w-5"

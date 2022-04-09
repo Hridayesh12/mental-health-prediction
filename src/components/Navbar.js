@@ -24,10 +24,10 @@ const Navbar = () => {
 					</Link>
 					<Link
 						className="px-5 transition-all transform hover:scale-110"
-						to="/"
+						to="/psychologist"
 					>
 						<button className="bg-primary text-white p-2 rounded-xl">
-							Get Started
+							Find Psychologist
 						</button>
 					</Link>
 				</div>
@@ -81,9 +81,9 @@ const Navbar = () => {
 					<Link className="p-5" to="/credits">
 						Credits
 					</Link>
-					<Link className="p-5" to="/">
+					<Link className="p-5" to="/psychologist">
 						<button className="bg-primary text-white p-2 rounded-xl">
-							Get Started
+							Find Psychologist
 						</button>
 					</Link>
 				</div>
