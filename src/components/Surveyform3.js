@@ -36,15 +36,15 @@ export default class Surveyform3 extends Component {
 								provides?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input onChange={handleChange("care_options")}  value={1} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input name="care_options" onChange={handleChange("care_options")}  value={1} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label  className=" flex-row sm:1xl text-3xl">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input onChange={handleChange("care_options")}  value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input name="care_options" onChange={handleChange("care_options")}  value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label  className="sm:1xl text-3xl ">No</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input onChange={handleChange("care_options")}  value={values.menemp} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input name="care_options" onChange={handleChange("care_options")}  value={values.menemp} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label  className="sm:1xl text-3xl">Not Sure</label>
                 </div>   
             </div>
@@ -52,11 +52,11 @@ export default class Surveyform3 extends Component {
 								employee wellness program?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input value={1}  onChange={handleChange("wellness_program") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input name="wellness" value={1}  onChange={handleChange("wellness_program") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label className=" flex-row sm:1xl text-3xl">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input onChange={handleChange("wellness_program")}   value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input name="wellness" onChange={handleChange("wellness_program")}   value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl ">No</label>
                 </div>
             </div>

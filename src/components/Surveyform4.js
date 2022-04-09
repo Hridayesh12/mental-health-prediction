@@ -6,10 +6,14 @@ export default class Surveyform4 extends Component {
 		e.preventDefault();
 		this.props.nextSection();
 	};
+    back = (e) => {
+		e.preventDefault();
+		this.props.prevSection();
+	};
   render() {
     const { values, handleChange } = this.props;
     const check=e=>{
-        if((values.leave==null)||(values.mental_health===null)||(values.phys_health===null)||(values.coworker===null)||(values.supervisor===null)){
+        if((values.leave==null)||(values.mental_health_consequence===null)||(values.phys_health_consequence===null)||(values.coworkers===null)||(values.supervisor===null)){
           alert("All The Field Are Mandatory")
         }
         else{
@@ -50,15 +54,15 @@ export default class Surveyform4 extends Component {
                 <label className="sm:1xl text-3xl ml-20">Do you think that discussing a mental health issue with your employer would have negative consequences?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input value={1} name="men_health" onChange={handleChange("mental_health")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input value={1} name="men_health" onChange={handleChange("mental_health_consequence")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input  value={0} name="men_health" onChange={handleChange("mental_health")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input  value={0} name="men_health" onChange={handleChange("mental_health_consequence")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input  value={2} name="men_health" onChange={handleChange("mental_health")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input  value={2} name="men_health" onChange={handleChange("mental_health_consequence")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label className="sm:1xl text-3xl " name="no">Maybe</label>
                     </div>
                 </div>
@@ -66,30 +70,30 @@ export default class Surveyform4 extends Component {
                                     employee wellness program?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="phys_health" value={1} onChange={handleChange("phys_health") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="phys_health" value={1} onChange={handleChange("phys_health_consequence") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input onChange={handleChange("phys_health")} name="phys_health" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input onChange={handleChange("phys_health_consequence")} name="phys_health" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label  className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input onChange={handleChange("phys_health")}  name="phys_health" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input onChange={handleChange("phys_health_consequence")}  name="phys_health" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                 </div>
                 <label className="sm:1xl text-3xl ml-20">Would you be willing to discuss a mental health issue with your coworkers?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="coworker" value={1} onChange={handleChange("coworker") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="coworker" value={1} onChange={handleChange("coworkers") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input onChange={handleChange("coworker")} name="coworker" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input onChange={handleChange("coworker")} name="coworkers" value={0} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label  className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
-                        <input  onChange={handleChange("coworker")} name="coworker" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                        <input  onChange={handleChange("coworker")} name="coworkers" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                         <label className="sm:1xl text-3xl " name="some">Some them</label>
                     </div>
                 </div>

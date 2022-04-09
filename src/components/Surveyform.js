@@ -14,8 +14,6 @@ export default class Surveyform extends Component {
     const { values, handleChange } = this.props;
     const check = (e) => {
         e.preventDefault();
-        console.log(values.givenName);
-        console.log(values.self_employed)
         if (values.givenName === null) {
             alert("Please Enter Name");
         } else if (values.age === null) {

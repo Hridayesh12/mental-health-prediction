@@ -13,9 +13,6 @@ export default class Surveyform2 extends Component {
   render() {
 		const { values, handleChange } = this.props;
 	const check = (e) => {
-        console.log(values.work_interfere)
-        console.log(values.tech_company)
-        console.log(values.benefits)
 			if (
 				values.work_interfere == null ||
 				values.family_history === null ||
@@ -59,11 +56,11 @@ export default class Surveyform2 extends Component {
         <label className="sm:1xl text-3xl ml-20">Do you have a family history of mental illness ?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input  name="fam" value={values.fam} onChange={handleChange("family_history") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input  name="fam" value={1} onChange={handleChange("family_history") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input  name="fam" value={values.fam} onChange={handleChange("family_history")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input  name="fam" value={0} onChange={handleChange("family_history")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl " name="no">No</label>
                 </div>
             </div>
@@ -71,11 +68,11 @@ export default class Surveyform2 extends Component {
 								time?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input name="remote" value={values.remote} onChange={handleChange("remote_work")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input name="remote" value={1} onChange={handleChange("remote_work")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label className=" flex-row sm:1xl text-3xl" name="yes">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input name="remote" value={values.remote} onChange={handleChange("remote_work")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input name="remote" value={0} onChange={handleChange("remote_work")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl " name="no">No</label>
                 </div>
             </div>
@@ -93,15 +90,15 @@ export default class Surveyform2 extends Component {
             <label className="sm:1xl text-3xl ml-20">Does your employer provide mental health benefits?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input  name="benefits"  value={values.benefits} onChange={handleChange("benefits")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input  name="benefits"  value={1} onChange={handleChange("benefits")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input  name="benefits"  value={values.benefits} onChange={handleChange("benefits")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input  name="benefits"  value={0} onChange={handleChange("benefits")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl " name="no">No</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">
-                    <input  name="benefits"  value={values.benefits} onChange={handleChange("benefits")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
+                    <input  name="benefits"  value={2} onChange={handleChange("benefits")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
                     <label className="sm:1xl text-3xl" name="notsure">Not Sure</label>
                 </div>   
             </div>

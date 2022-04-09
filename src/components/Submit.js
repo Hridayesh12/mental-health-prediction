@@ -30,13 +30,12 @@ export default class Submit extends Component {
     phys_health_consequence,coworkers,supervisor,mental_health_interview,
     phys_health_interview,mental_vs_physical,obs_consequence,treatment}}=
     this.props;
-
     let treat;
-    const redirect=e=>{
-      e.preventDefault();
-      this.setState({ redirectss: true });
-      console.log(redirectss);
-    }
+    // const redirect=e=>{
+    //   e.preventDefault();
+    //   this.setState({ redirectss: true });
+    //   console.log(redirectss);
+    // }
     const submit=e=>{
       e.preventDefault();
       
@@ -70,7 +69,9 @@ export default class Submit extends Component {
           })
         }).then(response => response.json())
         .then(json => {
+          console.log(json)
           const sd = json.msg;
+          console.log(sd)
           treat = json.msg.toString();
           console.log(treat);
           values.treatment = treat;
@@ -78,17 +79,17 @@ export default class Submit extends Component {
             result:true
         }); 
         })
-        .catch(error => {
-          console.log(error)
+        .catch(err => {
+          console.log(err)
         });
       }
     return (
       <div>
             <div className="sm:justify-center flex justify-end">
-            <div className=" flex items-center  justify-center mt-5 mb-5">
-            <img className="h-20 mr-5" src={logo} alt="log"/>
-            <h1 className="font-bold ml-3 text-6xl text-center">Confirmation Page</h1>
-        </div>
+              <div className=" flex items-center  justify-center mt-5 mb-5">
+              <img className="h-20 mr-5" src={logo} alt="log"/>
+              <h1 className="font-bold ml-2 text-6xl text-center">Confirmation Page</h1>
+            </div>
         <div className="mt-80 flex justify-center ">
               <button onClick={submit} className="text-white w-40 h-10 rounded-lg bg-primary  my-5 mr-3 ">Submit</button>
               <button onClick={this.back} className="text-white w-40 h-10 rounded-lg bg-primary  my-5 mr-3 ">Back</button>
