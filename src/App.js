@@ -6,22 +6,56 @@ import Survey from "./components/Survey";
 import Result1 from "./components/Result1";
 import Result from "./components/Result";
 
-import { BrowserRouter as Router ,Routes, Route} from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
 	return (
-	  <div>
-		  <Router>
-			<Routes>
-			<Route path="/" element={<><Navbar /><Dashboard /> <Footer /></>}/>
-			<Route path="/selfhelp" element={<><Navbar /></>}/>
-			<Route path="/form" element={<><Navbar /> <Survey /> <Footer /></>}/>
-			<Route path="/result" element={<><Navbar /> <Result /> <Footer /></>}/>
-			<Route path="/result1" element={<><Navbar /> <Result1 /> <Footer /></>}/>
-			</Routes>
-      </Router>
-		
-	  </div>
+		<div>
+			<Router>
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<>
+								<Navbar />
+								<Dashboard /> <Footer />
+							</>
+						}
+					/>
+					<Route
+						path="/selfhelp"
+						element={
+							<>
+								<Navbar />
+							</>
+						}
+					/>
+					<Route
+						path="/form"
+						element={
+							<>
+								<Navbar /> <Survey />
+							</>
+						}
+					/>
+					<Route
+						path="/result"
+						element={
+							<>
+								<Navbar /> <Result />
+							</>
+						}
+					/>
+					<Route
+						path="/result1"
+						element={
+							<>
+								<Navbar /> <Result1 />
+							</>
+						}
+					/>
+				</Routes>
+			</Router>
+		</div>
 	);
 }
