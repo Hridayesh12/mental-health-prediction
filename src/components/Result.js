@@ -13,7 +13,7 @@ function Result() {
 		navigate("/form");
 	}
 	function psycho() {
-		navigate("/form");
+		navigate("/psychologist");
 	}
 	return (
 		<div>

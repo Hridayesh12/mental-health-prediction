@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import Survey from "./components/Survey";
 import Result1 from "./components/Result1";
 import Result from "./components/Result";
-import SelfHelp from "./components/SelfHelp"
+import SelfHelp from "./components/SelfHelp";
+import Psychologist from "./components/Psychologist";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -53,6 +54,15 @@ export default function App() {
 						element={
 							<>
 								<Navbar /> <Result1 />
+							</>
+						}
+					/>
+					<Route
+						path="/psychologist"
+						element={
+							<>
+								<Navbar />
+								<Psychologist />
 							</>
 						}
 					/>
