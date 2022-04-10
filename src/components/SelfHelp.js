@@ -13,7 +13,13 @@ import thoughts from "../assets/thoughts.png";
 import hobbyicon from "../assets/hobbyicon.png";
 import hobbies1 from "../assets/hobbies1.png";
 import hobbies2 from "../assets/hobbies2.png";
+import { useNavigate } from "react-router-dom";
 function SelfHelp() {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `https://www.reddit.com/r/mademesmile`; 
+    navigate(path);
+  }
   const [currentPost, setCurrentPost] = useState({
 		title: "",
 		text: "",
@@ -65,20 +71,13 @@ function SelfHelp() {
           <img src={smiling} class="object-contain h-7 w-7 md:h-10 md:w-10 ..."/>
           <h1 class="my-2 font-bold text-base text-center md:text-xl">Finds Way To Smile</h1>
           <p class="my-2 text-xs text-center lg:text-base ...">Explore posts from the subreddit r/mademesmile</p>
-          <button class="my-2 bg-primary hover:bg-opacity-30 hover:text-black text-white font-bold py-2 px-4 rounded-xl inline-flex items-center">
+          <button class="my-2 bg-primary hover:bg-opacity-30 hover:text-black text-white font-bold py-2 px-4 rounded-xl inline-flex items-center" onClick={routeChange}>
             <span>Next</span>&nbsp;&nbsp;
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </button>
         </div>
-        <div>
-			<button onClick={getPost}>Get Post</button>
-			<h1>title: {currentPost.title}</h1>
-			<p>content: {currentPost.text}</p>
-      <h1>hi: {currentPost.resource}</h1>
-			<video src={currentPost.resource}></video>
-		</div>   
       </div>
       <div class="w-screen my-7 flex justify-center items-center flex-col-reverse sm:flex-row ...">
           <Swiper className="w-[300px] h-[150px] text-center rounded-xl bg-grey md:w-1/2 md:h-[250px]" tag="section" wrapperTag="ul" id="main"
