@@ -7,6 +7,7 @@ import Result1 from "./components/Result1";
 import Result from "./components/Result";
 import SelfHelp from "./components/SelfHelp";
 import Psychologist from "./components/Psychologist";
+import Credit from "./components/Credit";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -62,6 +63,15 @@ export default function App() {
 							<>
 								<Navbar />
 								<Psychologist />
+							</>
+						}
+					/>
+						<Route
+						path="/credits"
+						element={
+							<>
+								<Navbar />
+								<Credit />
 							</>
 						}
 					/>

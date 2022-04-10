@@ -13,7 +13,7 @@ export default class Surveyform4 extends Component {
   render() {
     const { values, handleChange } = this.props;
     const check=e=>{
-        if((values.leave==null)||(values.mental_health_consequence===null)||(values.phys_health_consequence===null)||(values.coworkers===null)||(values.supervisor===null)){
+        if((values.leave === null)||(values.mental_health_consequence === null)||(values.phys_health_consequence === null)||(values.coworkers === null)||(values.supervisor === null)){
           alert("All The Field Are Mandatory")
         }
         else{
@@ -79,7 +79,7 @@ export default class Surveyform4 extends Component {
                     </div>
                     <div className="flex-row flex items-center justify-center">
                         <input onChange={handleChange("phys_health_consequence")}  name="phys_health" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
-                        <label className="sm:1xl text-3xl " name="no">No</label>
+                        <label className="sm:1xl text-3xl " name="no">Maybe</label>
                     </div>
                 </div>
                 <label className="sm:1xl text-3xl ml-20">Would you be willing to discuss a mental health issue with your coworkers?</label>
@@ -94,7 +94,7 @@ export default class Surveyform4 extends Component {
                     </div>
                     <div className="flex-row flex items-center justify-center">
                         <input  onChange={handleChange("coworkers")} name="coworker" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
-                        <label className="sm:1xl text-3xl " name="some">Some them</label>
+                        <label className="sm:1xl text-3xl " name="some">Some of them</label>
                     </div>
                 </div>
                 <label className="sm:1xl text-3xl ml-20">Would you be willing to discuss a mental health issue with your direct supervisor(s)?</label>
@@ -109,7 +109,7 @@ export default class Surveyform4 extends Component {
                     </div>
                     <div className="flex-row flex items-center justify-center">
                         <input onChange={handleChange("supervisor")} name="supervisor" value={2} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
-                        <label  className="sm:1xl text-3xl " name="some">Some them</label>
+                        <label  className="sm:1xl text-3xl " name="some">Some of them</label>
                     </div>
                 </div>
                 <div className="sm:justify-center flex justify-end">

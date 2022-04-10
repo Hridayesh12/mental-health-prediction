@@ -13,6 +13,7 @@ export default class Surveyform extends Component {
   render() {
     const { values, handleChange } = this.props;
     const check = (e) => {
+        console.log(values.gender)
         e.preventDefault();
         if (values.givenName === null) {
             alert("Please Enter Name");
@@ -43,14 +44,14 @@ export default class Surveyform extends Component {
                 </div>
                 <div className=" mx-20 flex items-center justify-between">
                     <label className="text-3xl" >Gender</label>
-                    <div className=" flex-row  flex items-center justify-evenly">
-                    <div  className="flex-row flex items-center justify-center">
+                    <div  className=" flex-row  flex items-center justify-evenly">
+                    <div   className="flex-row flex items-center justify-center">
                         <input name="gender" value={1} onChange={handleChange("gender")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Male</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
                         <input name="gender" value={0} onChange={handleChange("gender")} type="radio" className="text-medium border:2 ml-1 my-5 w-6 h-8"/>
-                        <label className="sm:1xl text-3xl " name="no">Female</label>
+                        <label  className="sm:1xl text-3xl " name="no">Female</label>
                     </div>
                 </div>
                 
@@ -69,9 +70,6 @@ export default class Surveyform extends Component {
                         <label className="sm:1xl text-3xl " name="no">No</label>
                     </div>
                 </div>
-                
-                
-                
                 </div>
                 
                 <div className="sm:justify-center flex justify-end">

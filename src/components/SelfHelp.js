@@ -107,6 +107,28 @@ function SelfHelp() {
         </div>
         <img src={hobbies2} class="object-contain h-36 w-36 md:h-56 md:w-56 ..."/>
       </div>
+      <div className="text-center text-1xl">
+			<h1 className="text-2xl mt-3 mb-3 font-bold">SELF-HELP TIPS AND ADVICES TO TACKLE DEPRESSION</h1>
+			<ul class="tips-list">
+				<li className="litem">
+					Share your problems with family or close friends
+				</li>
+				<li className="litem">Start practicing meditation and yoga</li>
+				<li className="litem">Eat to your hearts content</li>
+				<li className="litem">Explore new hobbies</li>
+				<li className="litem">Go for walks regularly as it is relaxing</li>
+				<li className="litem">Start loving yourself </li>
+				<li className="litem">
+					Do not try to overthink matters and DO NOT DOUBT YOURSELF
+				</li>
+				<li className="litem">
+					Buy or Adopt a pet as they can show u the love u may be searching for
+				</li>
+				<li className="litem">
+					Look at old photos from trips or happy memories
+				</li>
+			</ul>
+		</div>
     </>
   )
 }
