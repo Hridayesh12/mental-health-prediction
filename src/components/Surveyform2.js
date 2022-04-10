@@ -56,7 +56,7 @@ export default class Surveyform2 extends Component {
         <label className="sm:1xl text-3xl ml-20">Do you have a family history of mental illness ?</label>
             <div className=" flex-row  flex items-center justify-evenly">
                 <div  className="flex-row flex items-center justify-center">
-                    <input  name="fam" value={1} onChange={handleChange("family_history") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                    <input  name="fam" value={1} onChange={handleChange("family_history")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                     <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                 </div>
                 <div className="flex-row flex items-center justify-center">

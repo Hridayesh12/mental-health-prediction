@@ -31,7 +31,7 @@ export default class Surveyform4 extends Component {
             <label className="sm:1xl text-3xl ml-20">How easy is it for you to take medical leave for a mental health condition?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="leave" value={1} onChange={handleChange("leave")}type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="leave" value={1} onChange={handleChange("leave")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Somewhat easy</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
@@ -70,7 +70,7 @@ export default class Surveyform4 extends Component {
                                     employee wellness program?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="phys_health" value={1} onChange={handleChange("phys_health_consequence") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="phys_health" value={1} onChange={handleChange("phys_health_consequence") } type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
@@ -85,7 +85,7 @@ export default class Surveyform4 extends Component {
                 <label className="sm:1xl text-3xl ml-20">Would you be willing to discuss a mental health issue with your coworkers?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="coworker" value={1} onChange={handleChange("coworkers") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="coworker" value={1} onChange={handleChange("coworkers")}type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name=" yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
@@ -100,7 +100,7 @@ export default class Surveyform4 extends Component {
                 <label className="sm:1xl text-3xl ml-20">Would you be willing to discuss a mental health issue with your direct supervisor(s)?</label>
                 <div className=" flex-row  flex items-center justify-evenly">
                     <div  className="flex-row flex items-center justify-center">
-                        <input name="supervisor" value={1} onChange={handleChange("supervisor") }type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
+                        <input name="supervisor" value={1} onChange={handleChange("supervisor")} type="radio" className=" text-medium border:2 ml-2 my-5 w-6 h-8 "/>
                         <label className=" flex-row sm:1xl text-3xl" name="yes">Yes</label>
                     </div>
                     <div className="flex-row flex items-center justify-center">
